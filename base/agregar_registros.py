@@ -39,7 +39,7 @@ ciudades_ecuador = [
     "La Libertad"    # Santa Elena
 ]
 
-df = pd.read_csv("data/personas.csv", sep="|")
+df = pd.read_csv("data/personas.csv", sep="|", encoding="cp1252")
 lista_personas = df["id_persona"].tolist()
 
 def obtener_valor():
